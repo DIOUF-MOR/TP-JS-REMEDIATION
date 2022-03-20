@@ -5,7 +5,8 @@ body{
 }
 
 .conteneur{
-    /* border: solid 1px green; */
+    display: flex;
+    justify-content: space-between;
     background-color: gainsboro;
     box-shadow: 3px 3px 3px 3px lightgray;
     border-radius: 10px;
@@ -16,6 +17,7 @@ body{
 }
 .span1{
     position: fixed;
+    box-shadow: 3px 3px 3px 3px lightgray;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -24,23 +26,22 @@ body{
     padding: 20px 10px;
 }
 .span2{
-  
     display: flex;
+    box-shadow: 3px 3px 3px 3px lightgray;
     flex-direction: column-reverse;
-
     justify-content: center;
     align-items: center;
-    position: absolute;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    height: auto;
+    border-radius: 10px;
+    height: 98%;
     width: 10vw;
     /* top: 65%; */
-    /* left: 65%; */
-    top: 10%;
-    right: 5%;
-    animation: animer 1s;
+    margin-left: 70%;
+    /* top: 10%; */
+    /* right: 5%; */
+
 }
 button{
     margin: 0 3px;
@@ -67,12 +68,6 @@ button{
     background-color:#17a2b8;
 
 }
-@keyframes animer {
-    from{
-        transform: translateY(0%);
-    }
-    to{
-        transform: translateY(-60%);
-
-    }
-}
+/* @keyframes animer {
+    
+} */
