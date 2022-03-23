@@ -1,0 +1,61 @@
+body{
+    /* background-image: url("/opt/lampp/htdocs/TP-JS-REMEDIATION/TP3-CAROUSSEL/img/chv.jpg"); */
+    /* background-size: cover; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: aquamarine; */
+}
+#carrousse{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* background-image: url("/opt/lampp/htdocs/TP-JS-REMEDIATION/TP3-CAROUSSEL/img/chv.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: blanchedalmond; */
+    /* border: 1px solid black; */
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+
+}
+#contentCarrousse{
+    position: relative;
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    border: 1px solid black;
+}
+.btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 100px;
+    height: 100px;
+    background-color: #cccccc;
+    color: #423223;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    top: 50%;
+    font-size: 4rem;
+}
+#samaDroite{
+    right: 3vw;
+}
+#samaGauche{
+    left: 3vw;
+
+
+}
+img{
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+}

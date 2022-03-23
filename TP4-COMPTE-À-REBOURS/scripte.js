@@ -8,15 +8,15 @@ const compteur = () => {
     const heure = minute * 60;
     const jour = heure * 24;
 
-    const textjour = Math.floor(dif / 1000 / 60 / 60 / 24);
-    const textheure = Math.floor(dif / 1000 / 60 / 60) % 24;
-    const textminute = Math.floor(dif / 1000 / 60) % 60;
-    const textseconde = Math.floor(dif / 1000) % 60;
+    const jours = Math.floor(dif / 1000 / 60 / 60 / 24);
+    const heures = Math.floor(dif / 1000 / 60 / 60) % 24;
+    const minutes = Math.floor(dif / 1000 / 60) % 60;
+    const secondes = Math.floor(dif / 1000) % 60;
 
-    document.querySelector(".jour").innerText = textjour;
-    document.querySelector(".heure").innerText = textheure;
-    document.querySelector(".minute").innerText = textminute;
-    document.querySelector(".seconde").innerText = textseconde;
+    document.querySelector(".jour").innerText = jours;
+    document.querySelector(".heure").innerText = heures;
+    document.querySelector(".minute").innerText = minutes;
+    document.querySelector(".seconde").innerText = secondes;
 
 };
 setInterval(compteur, 1000);

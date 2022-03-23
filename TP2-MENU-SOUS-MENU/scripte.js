@@ -1,118 +1,302 @@
-const tabMenus = [
+
+data = [
+
     {
-        icon1: "nav-icon fas fa-tachometer-alt",
-        p: "Dashboard",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
-    },
-    {
-        icon1: "",
-        p: "",
-        icon2: "",
-        icon3: "far fa-circle nav-icon",
-        p2: "Dashboard v1",
-    },
-    {
-        icon1: "",
-        p: "",
-        icon2: "",
-        icon3: "far fa-circle nav-icon",
-        p2: "Dashboard v2",
-    },
-    {
-        icon1: "",
-        p: "",
-        icon2: "",
-        icon3: "far fa-circle nav-icon",
-        p2: "Dashboard v3",
-    },
-    {
-        icon1: "nav-icon fas fa-th",
-        p: "Widgets",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
-    },
-    {
-        icon1: "nav-icon fas fa-copy",
-        p: "layout Options",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
-    },
-    {
-        icon1: "nav-icon fas fa-chart-pie",
-        p: "Charts",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
-    },
-    {
-        icon1: "nav-icon fas fa-tree",
-        p: "UI Elements",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
-    },
-    {
-        icon1: "nav-icon fas fa-edit",
-        p: "Forms",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
-    },
-    {
-        icon1: "nav-icon fas fa-table",
-        p: "Tables",
-        icon2: "right fas fa-angle-left",
-        icon3: "",
-        p2: "",
+        icone: "nav-icon fas fa-tachometer-alt",
+        titre: "Dashborrd",
+        news: "",
+        fleche: "right fas fa-angle-left",
+        div2: [
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Dashborrd v1"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Dashborrd v2"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Dashborrd v3"
+            }
+        ]
     },
 
+    {
+        icone: "nav-icon fas fa-th",
+        titre: "Widgets",
+        news: "",
+        fleche: "new",
+        div2: [
+            {
+                iconeRonde: "",
+                nom: ""
+            }
+        ]
+
+    },
+    {
+        icone: "nav-icon fas fa-copy",
+        titre: "Layout Options",
+        news: "number",
+        fleche: "right fas fa-angle-left",
+        div2: [
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Top Navigation"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Top Navigation + Sidebar"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Boxed"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Fixed Sidebar"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Fixed Sidebar + Custom Area"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Fixed Navbar"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Fixed Footer"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Callopset Sidebar"
+            },
+        ]
+    },
+    {
+        icone: "nav-icon fas fa-chart-pie",
+        titre: "Charts",
+        news: "",
+        fleche: "right fas fa-angle-left",
+        div2: [
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "ChartJS"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Flot"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Inline"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "uPlot"
+            },
+
+        ]
+    },
+    {
+        icone: "nav-icon fas fa-tree",
+        titre: "UI Elements",
+        news: "",
+        fleche: "right fas fa-angle-left",
+        div2: [
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "General"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Icons"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Buttons"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Sliders"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Modals & alerts"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Navebar & Tabs"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Timeline"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Ribbons"
+            },
+        ]
+    },
+    {
+        icone: "nav-icon fas fa-edit",
+        titre: "Forms",
+        news: "",
+        fleche: "right fas fa-angle-left",
+        div2: [
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "General Elements"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Advanced Elements"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Editors"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "Validation"
+            },
+
+        ]
+    },
+    {
+        icone: "nav-icon fas fa-table",
+        titre: "Tables",
+        news: "",
+        fleche: "right fas fa-angle-left",
+        div2: [
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "SimpleTables"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "DataTables"
+            },
+            {
+                iconeRonde: "far fa-circle nav-icon",
+                nom: "JsGrid"
+            },
+
+
+        ]
+    },
 ]
 
-tabMenus.forEach(function (objet) {
-    valIcon1 = objet["icon1"]
-    valP = objet["p"]
-    valicon2 = objet["icon2"];
-    valicon3 = objet["icon3"];
-    valP2 = objet["p2"]
+const nav = document.querySelector('.navigator')
+const contentEntete = document.querySelector('.contentEntete')
+const El_hadji_sy = document.querySelector('.fa-bars');
+const conteneur = document.querySelector('.conteneur')
+const serche = document.querySelector('.conteneur');
 
 
+for (let i = 0; i < 3; i++) {
+    ajoutDiv(contentEntete);
+}
+addElements(nav);
+
+const image=document.createElement('img');
+const image2=document.createElement('img');
+const text=document.createElement('p');
+const text2=document.createElement('p');
+const input=document.createElement('input');input.type="search";
+const searche=document.createElement('i');searche.className="fas fa-search fa-fw";
+input.className="input"
+image.src="./AdminLTELogo.png";
+text.innerHTML="AdminLTE 3";
+image2.src="./user.jpg";
+text2.innerHTML="Alexander Pierce ";
+contentEntete.children[0].firstChild.appendChild(image);
+contentEntete.children[0].lastChild.appendChild(text);
+
+contentEntete.children[1].firstChild.appendChild(image2);
+contentEntete.children[1].lastChild.appendChild(text2);
+
+contentEntete.children[2].lastChild.appendChild(input);
+contentEntete.children[2].lastChild.appendChild(searche);
+contentEntete.children[2].className='suprimer';
+
+function ajoutDiv(parent){
+    const contentMenu=document.createElement('div');
+    const contentImg=document.createElement('span');
+    const contentInfo=document.createElement('span');
+
+    contentMenu.className="contentMenu";
+    contentInfo.className="contentInfo";
+    contentImg.className="contentImg";
+    
+    contentMenu.append(contentImg,contentInfo);
+    parent.appendChild(contentMenu);
+}
+
+function creatElement() {
+    const divParent = document.createElement('div');
+    const divContent = document.createElement('div');
+    const divIcone = document.createElement('div');
+    const divElements = document.createElement('div');
+    const spanIcone = document.createElement('span');
+    const spanText = document.createElement('span');
+    const spanNumber = document.createElement('span');
+    const spanDownLeft = document.createElement('span');
+    const sousMenu = document.createElement('ul');
 
 
-    const nav = document.querySelector('.conteneurPrincipal');
-    const div = document.createElement('div');
-    const p = document.createElement('p');
-    const p2 = document.createElement('p');
-    const icon1 = document.createElement('i');
-    const icon2 = document.createElement('i');
-    const icon3 = document.createElement('i');
+    divIcone.appendChild(spanIcone);
+    divIcone.className = 'divIcone';
+    divElements.append(spanText, spanNumber, spanDownLeft);
+    divElements.className = 'divElements';
+    divContent.append(divIcone, divElements);
+    divContent.className = 'cellule';
+    divParent.append(divContent, sousMenu);
+    divParent.className = 'divParent';
+    sousMenu.className = 'sousMenu';
 
-    icon1.className = valIcon1
-    icon2.className = valicon2
-    icon3.className = valicon3
-    p.innerText = valP;
-    p2.innerText = valP2;
-    p.className = "paragraphe"
-    p2.className = "paragraphe"
-    div.className = 'cellule';
-    div.append(icon1, p, icon2);
-    div.append(icon3, p2);
-    nav.appendChild(div);
-   
-
-    icon2.addEventListener('click', function () {
-
-        if (icon2.className == "fa-solid fa-angle-down") {
-            icon2.className = "right fas fa-angle-left"
-
-        } else if (icon2.className == "right fas fa-angle-left") {
-            icon2.className = "fa-solid fa-angle-down";
-            dive.style.visibility = visibled;
+    divContent.addEventListener('click', function () {
+        if (spanDownLeft.className == "right fas fa-angle-left" || spanDownLeft.className == "right fas fa-angle-left rotation") {
+            spanDownLeft.classList.toggle('rotation')
+            sousMenu.classList.toggle('sousMenuRotate')
         }
     })
-});
+    return divParent;
+}
 
+function addElements(parent) {
+    for (let i = 0; i < data.length; i++) {
+        parent.appendChild(creatElement());
+
+        parent.children[i].firstChild.firstChild.firstChild.className = data[i].icone;
+        parent.children[i].firstChild.lastChild.firstChild.innerHTML = data[i].titre;
+        parent.children[i].firstChild.lastChild.children[1].className = data[i].news;
+        parent.children[i].firstChild.lastChild.lastChild.className = data[i].fleche;
+
+        for (let j = 0; j < data[i].div2.length; j++) {
+            parent.children[i].lastChild.appendChild(creatElement());
+            parent.children[i].lastChild.children[j].firstChild.firstChild.firstChild.className = data[i].div2[j].iconeRonde;
+            parent.children[i].lastChild.children[j].firstChild.lastChild.firstChild.innerHTML = data[i].div2[j].nom;
+        }
+    }
+    parent.children[1].firstChild.lastChild.lastChild.innerHTML = "New";
+    parent.children[2].firstChild.lastChild.children[1].innerHTML = "6";
+}
+
+El_hadji_sy.addEventListener('click', function () {
+    document.querySelectorAll('.divElements').forEach(Element => {
+        Element.classList.toggle('hidden');
+    })
+    contentEntete.children[0].lastChild.classList.toggle('hidden');
+    contentEntete.children[0].firstChild.classList.toggle('centerContent');
+
+    contentEntete.children[1].lastChild.classList.toggle('hidden');
+    contentEntete.children[1].firstChild.classList.toggle('centerContent');
+
+    contentEntete.children[2].classList.toggle('hidden');
+    
+
+})
 
