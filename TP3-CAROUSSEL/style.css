@@ -5,11 +5,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: aquamarine; */
+    position: relative;
+}
+body::after{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 #carrousse{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    /* background-image: url("/opt/lampp/htdocs/TP-JS-REMEDIATION/TP3-CAROUSSEL/img/chv.jpg"); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 70vw;
@@ -28,14 +37,15 @@ body{
     display: flex;
     width: 90vw;
     height: 90vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    z-index: 2;
 }
 .btn{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     width: 100px;
     height: 100px;
     background-color: #cccccc;
@@ -43,7 +53,7 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 50%;
-    top: 50%;
+    top: 45%;
     font-size: 4rem;
 }
 #samaDroite{
